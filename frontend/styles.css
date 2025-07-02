@@ -1,19 +1,20 @@
-/* style.css */
+/* Global background and font */
 body {
   background: linear-gradient(135deg, #f5f7fa, #e2eafc) !important;
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Header styling */
 h1, .stMarkdown h1 {
   text-align: center;
-  color:rgb(42, 79, 130);
+  color: rgb(42, 79, 130);
   font-size: 3rem;
   margin-top: 2rem;
   font-weight: bold;
   font-family: "Lucida Console", Monospace;
 }
 
-/* Force font family using !important and targeting deeply */
+/* Buttons */
 div.stButton > button {
   background-color: #89CFF0;
   color: black !important;
@@ -32,13 +33,37 @@ div.stButton > button:hover {
   color: white !important;
   transform: scale(1.03);
 }
-/* styles.css */
-.chat-message {
-    background-color: #f1f1f1;
-    padding: 12px;
-    border-radius: 10px;
-    margin: 10px 0;
+
+/* Chat Bubbles */
+.chat-message.user {
+  background-color: #DCF8C6;
+  padding: 12px 18px;
+  border-radius: 15px;
+  margin: 10px 0;
+  margin-left: 20%;
+  text-align: right;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+.chat-message.assistant {
+  background-color: #F1F0F0;
+  padding: 12px 18px;
+  border-radius: 15px;
+  margin: 10px 0;
+  margin-right: 20%;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+/* Form + expander sections */
+.st-expander {
+  background-color: #ffffffcc;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
 
+/* Improve spacing for inputs */
+input, .stDateInput, .stTimeInput {
+  margin-bottom: 10px;
+}
