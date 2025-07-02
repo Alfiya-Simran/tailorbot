@@ -1,0 +1,36 @@
+/* style.css */
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e2eafc) !important;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, .stMarkdown h1 {
+  text-align: center;
+  color:rgb(42, 79, 130);
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-family: "Lucida Console", Monospace;
+}
+
+/* Force font family using !important and targeting deeply */
+div.stButton > button {
+  background-color: #89CFF0;
+  color: black !important;
+  font-family: "Lucida Handwriting", Monospace;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  transition: 0.3s;
+  text-shadow: none !important;
+}
+
+div.stButton > button:hover {
+  background-color: #4338ca;
+  color: white !important;
+  transform: scale(1.03);
+}
+
+
