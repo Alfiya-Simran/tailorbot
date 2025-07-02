@@ -49,7 +49,11 @@ def book_slot_tool(start: str, end: str):
         return "❌ You can't book a slot in the past. Please choose a future time."
 
     event_link = create_event(start_dt, end_dt)
+    return (
+        f"✅ Booking confirmed for **{start_dt.strftime('%I:%M %p')} to {end_dt.strftime('%I:%M %p')}** "
+        f"on **{start_dt.strftime('%B %d, %Y')}**.\n\n"
+        f"🔗 [View in Google Calendar]({event_link})"
+    )
 
-    return f"✅ Booking confirmed for {start_dt.strftime('%I:%M %p')} to {end_dt.strftime('%I:%M %p')} on {start_dt.strftime('%B %d, %Y')}.\n\n🔗 [View in Calendar]({event_link})"
 
 
