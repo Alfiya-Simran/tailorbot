@@ -13,4 +13,5 @@ langchain
 langchain-community
 langchain-core
 groq
-pyhton-dateutil
+python-dateutil
+
