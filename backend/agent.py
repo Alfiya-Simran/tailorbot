@@ -3,7 +3,7 @@
 import os
 from groq import Groq
 from dotenv import load_dotenv
-from calendar_utils import get_free_slots, create_event
+from backend.calendar_utils import get_free_slots, create_event
 from datetime import datetime
 import pytz
 
