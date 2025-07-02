@@ -113,7 +113,8 @@ if user_input:
 
 
 
-# 💬 Display chat messages
+# 💬 Display chat messages with avatars
 for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
+    avatar = "🤖" if msg["role"] == "assistant" else "👤"
+    with st.chat_message(msg["role"], avatar=avatar):
         st.markdown(msg["content"])
