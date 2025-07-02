@@ -3,7 +3,6 @@
 import streamlit as st
 import requests
 from datetime import datetime, time
-
 st.set_page_config(page_title="TailorBot - Calendar Booking", layout="centered")
 def local_css(file_name):
     with open(file_name) as f:
@@ -18,7 +17,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # ✅ Backend URL (FastAPI, not Streamlit!)
-API_URL = "http://localhost:8000/chat"
+API_URL = "https://tailorbot-backend.onrender.com/chat"
 
 # 📅 Booking form
 with st.expander("📅 Book a Slot Manually"):
