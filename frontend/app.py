@@ -3,11 +3,17 @@
 import streamlit as st
 import requests
 from datetime import datetime, time
+import os
 st.set_page_config(page_title="TailorBot - Calendar Booking", layout="centered")
+
+
 def local_css(file_name):
-    with open(file_name) as f:
+    full_path = os.path.join(os.path.dirname(__file__), file_name)
+    with open(full_path) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css("styles.css")
+
+local_css("styles.css")  # ✅ Keep as-is now that the function handles the path
+
 st.title("TailorBot - Calendar Booking Assistant")
 st.markdown("Chat with me to check availability and book appointments!")
 
