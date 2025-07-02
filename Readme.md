@@ -76,7 +76,7 @@ credentials = service_account.Credentials.from_service_account_info(service_acco
 ---
 
 ## 🔗 Live Links
-🌐 **Frontend**: [Streamlit](https://tailorbot-frontend.streamlit.app)
+🌐 **Frontend**: [Streamlit](https://tailorbot.streamlit.app/)
 
 ⚙️ **Backend**: [Render](https://tailorbot-backend.onrender.com)
 
