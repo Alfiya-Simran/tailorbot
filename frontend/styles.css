@@ -32,5 +32,13 @@ div.stButton > button:hover {
   color: white !important;
   transform: scale(1.03);
 }
+/* styles.css */
+.chat-message {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
 
 
