@@ -9,6 +9,15 @@ import os
 
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
+import os, base64
+
+# Decode service_account.json if it doesn't exist
+if not os.path.exists("service_account.json"):
+    encoded_key = os.getenv("SERVICE_ACCOUNT_B64")
+    if encoded_key:
+        with open("service_account.json", "wb") as f:
+            f.write(base64.b64decode(encoded_key))
+
 SERVICE_ACCOUNT_FILE = 'service_account.json'  # path to your credentials
 CALENDAR_ID= "alfiyasimran05@gmail.com"
 
