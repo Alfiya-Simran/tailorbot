@@ -7,7 +7,7 @@ st.set_page_config(page_title="TailorBot - Calendar Booking", layout="centered")
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css("styles.css")
+#local_css("styles.css")
 st.title("TailorBot - Calendar Booking Assistant")
 st.markdown("Chat with me to check availability and book appointments!")
 
