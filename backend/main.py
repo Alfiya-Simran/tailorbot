@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
-from agent import llm, available_slots_tool, book_slot_tool
+from .agent import llm, available_slots_tool, book_slot_tool
 from fastapi.middleware.cors import CORSMiddleware
 import re
 app = FastAPI()
