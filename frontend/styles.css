@@ -1,19 +1,69 @@
-/* styles.css */
-.chat-bubble {
-  background-color: #f9f9f9;
-  padding: 10px 14px;
-  margin: 6px 0;
-  border-radius: 12px;
-  max-width: 90%;
-  display: inline-block;
+/* Global background and font */
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e2eafc) !important;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.chat-bubble.user {
-  background-color: #d1e7dd;
-  align-self: flex-end;
+/* Header styling */
+h1, .stMarkdown h1 {
+  text-align: center;
+  color: rgb(42, 79, 130);
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-family: "Lucida Console", Monospace;
 }
 
-.chat-bubble.bot {
-  background-color: #e2e3e5;
-  align-self: flex-start;
+/* Buttons */
+div.stButton > button {
+  background-color: #89CFF0;
+  color: black !important;
+  font-family: "Lucida Handwriting", Monospace;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  transition: 0.3s;
+  text-shadow: none !important;
+}
+
+div.stButton > button:hover {
+  background-color: #4338ca;
+  color: white !important;
+  transform: scale(1.03);
+}
+
+/* Chat Bubbles */
+.chat-message.user {
+  background-color: #DCF8C6;
+  padding: 12px 18px;
+  border-radius: 15px;
+  margin: 10px 0;
+  margin-left: 20%;
+  text-align: right;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-message.assistant {
+  background-color: #F1F0F0;
+  padding: 12px 18px;
+  border-radius: 15px;
+  margin: 10px 0;
+  margin-right: 20%;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form + expander sections */
+.st-expander {
+  background-color: #ffffffcc;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* Improve spacing for inputs */
+input, .stDateInput, .stTimeInput {
+  margin-bottom: 10px;
 }
